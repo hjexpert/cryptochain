@@ -114,7 +114,7 @@ app.get('*',(req,res)=>{
 });
 
 
-const synWithRootState = () => {
+const syncWithRootState = () => {
     request({ url: `${ROOT_NODE_ADDRESS}/api/blocks`},(error, reponse, body)=>{
         if(!error && response.statusCode ===200){
             const rootChain = JSON.parse(body);
