@@ -13,7 +13,7 @@ const TransactionMiner = require('./app/transaction-miner');
 const isDevelopment = process.env.ENV === 'development';
 
 const REDIS_URL = isDevelopment ?
-        'redis:127.0.0.1:6379' : 
+        'redis://127.0.0.1:6379' : 
         'redis://:p728b467ef256b4a3d375295e53aa3bbdb0c0a7b2124dfc3730f0dbc4aa7c7e18@ec2-52-7-158-107.compute-1.amazonaws.com:7839';
 const DEFAULT_PORT = 3000;
 const ROOT_NODE_ADDRESS = `http://localhost:${DEFAULT_PORT}`;
@@ -132,7 +132,7 @@ const syncWithRootState = () => {
       }
     });
   };
-  
+
 
 if (isDevelopment) {
     const walletFoo = new Wallet();
