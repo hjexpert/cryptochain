@@ -29,6 +29,7 @@
     "nodemon": "^1.18.4"
   },
   "dependencies": {
+    "@babel/runtime": "^7.15.4",
     "body-parser": "^1.18.3",
     "elliptic": "^6.5.4",
     "express": "^4.17.1",
