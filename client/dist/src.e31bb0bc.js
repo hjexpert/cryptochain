@@ -51220,7 +51220,8 @@ var ConductTransaction = /*#__PURE__*/function (_Component) {
         value: this.state.amount,
         onChange: this.updateAmount
       })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Button, {
-        bsStyle: "danger",
+        size: "sm",
+        variant: "primary",
         onClick: this.conductTransaction
       }, "Submit")));
     }
@@ -51462,7 +51463,7 @@ require("./index.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _reactDom.render)( /*#__PURE__*/_react.default.createElement(_reactRouterDom.Router, {
+(0, _reactDom.render)( /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, {
   history: _history.default
 }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
   exact: true,
@@ -51506,7 +51507,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "3108" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64556" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
